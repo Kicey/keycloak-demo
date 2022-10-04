@@ -1,0 +1,17 @@
+server:
+  port: 8765
+  
+logging:
+    level:
+      root: error
+      
+keycloak:
+  realm: demo
+  auth-server-url: 'https://identity.kicey.site/'
+  ssl-required: external
+  resource: keycloak-demo
+  verify-token-audience: true
+  credentials:
+    secret: xCi1aChVriLE13afwZfs5pOpC15RoppI
+  use-resource-role-mappings: true
+  confidential-port: 0
